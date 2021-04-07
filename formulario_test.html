@@ -1,0 +1,159 @@
+<h2> Información general del postulante </h2>
+
+<label> Nombre del Municipio al que pertenece el postulante 
+    [text* your-municipality] </label>
+
+<label> Departamento/área del Municipio al que pertenece el postulante
+    [text* your-area] </label>
+
+<label> Grado, Título profesional o técnico del postulante 
+    [text* your-degree] </label>
+
+
+<h2> Información personal </h2>
+
+<label> Apellidos 
+     [text* your-last-name] </label>
+
+<label> Nombres 
+     [text* your-name] </label>
+
+<label> Nacionalidad 
+    [text* your-nacionality] </label>
+
+<label> Sexo 
+    [select* your-sex include_blank "Femenino" "Masculino" "Prefiero no indicar" "Otro"]</label>
+
+<label> Rut
+    [text* your-rut] </label>
+
+<label> Dirección particular
+    [text* your-address] </label>
+
+<label> Ciudad
+    [text* your-city] </label>
+
+<label> Teléfono de contacto
+    [tel* your-phone] </label>
+
+<label> Correo electrónico de contacto (será remitida toda la información en caso de selección)
+    [email* your-email] </label>
+
+
+<h2> Trayectoria profesional al interior del Municipio </h2>
+
+<label>Cargo actual en el Municipio (y describa brevemente sus funciones) 
+	[textarea* job-title-description] </label>
+
+<label>Indique el tiempo de antigüedad en el cargo (en meses)
+	[number* months-job-title]</label>
+
+<label>¿Ha desempeñado otros cargos en temas ambientales al interior del Municipio?
+	[select* your-environmetal-job-title include_blank "Si" "No"]</label>
+
+
+<label>Si su respuesta anterior es SÍ, indique qué otros cargos y funciones ha desempeñado al interior del Municipio en temas ambientales y/o de acción climática:
+	[textarea others-job-titles]</label>
+
+
+<label>Indique el tiempo que lleva trabajando en temas ambientales y/o de acción climática al interior del municipio (en años): 
+	[number* year-evironmetal-job-title]</label>
+
+
+<h2> Especialización en temas ambientales y/o de acción climática </h2>
+
+<label>¿Ha realizado cursos, capacitaciones o postítulos de especialización en temas ambientales y/o de acción climática? 
+	[select* your-courses include_blank "Si" "No"]</label>
+
+<h4>Si su respuesta anterior es SÍ, Indique qué otros cursos, capacitaciones o postítulos de especialización en temas ambientales y/o de acción climática ha realizado:</h4>
+
+<table>
+	<thead>
+		<tr class="row-1 odd" role="row">
+			<th class="column-1 sorting_disabled footable-first-column" style="width: 30%;" rowspan="1" colspan="1">
+				<strong>Curso</strong>
+			</th>
+			<th class="column-2 sorting_disabled" style="width: 40%;" rowspan="1" colspan="1">
+				<strong>Institución</strong>
+			</th>
+			<th class="column-3 sorting_disabled" style="width: 10%;" rowspan="1" colspan="1">
+				<strong>País</strong>
+			</th>
+			<th class="column-4 sorting_disabled" style="width: 20%; display: table-cell;" data-hide="phone" rowspan="1" colspan="1">
+				<strong>Año obtención</strong>
+			</th>
+		</tr>
+	</thead>
+	<tbody class="row-hover">
+
+		<tr class="row-2 even footable-detail-show" role="row">
+			<td class="column-1 footable-first-column">
+				<label> [text* your-course4] </label> 
+			</td>
+			<td class="column-2"> 
+				<label> [text* your-institution4] </label>
+			</td>
+			<td class="column-3 footable-last-column">
+				<label> [text* your-country4] </label>
+			</td>
+			<td class="column-4" >
+				<label> [text* your-year4] </label>
+			</td>
+		</tr>
+
+		<tr class="row-2 even footable-detail-show" role="row">
+			<td class="column-1 footable-first-column">
+				<label> [text your-course5] </label> 
+			</td>
+			<td class="column-2"> 
+				<label> [text your-institution5] </label>
+			</td>
+			<td class="column-3 footable-last-column">
+				<label> [text your-country5] </label>
+			</td>
+			<td class="column-4" >
+				<label> [text your-year5] </label>
+			</td>
+		</tr>
+
+		<tr class="row-2 even footable-detail-show" role="row">
+			<td class="column-1 footable-first-column">
+				<label> [text your-course6] </label> 
+			</td>
+			<td class="column-2"> 
+				<label> [text your-institution6] </label>
+			</td>
+			<td class="column-3 footable-last-column">
+				<label> [text your-country6] </label>
+			</td>
+			<td class="column-4" >
+				<label> [text your-year6] </label>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<h2>Documentos</h2>
+
+
+<label> Anexo I: Carta de Aceptación de la Beca de Diplomado y Compromiso
+[file* your-acceptance-commitment filetypes:pdf|PDF]/PDF</label>
+
+
+<label> Anexo II: Carta de Compromiso Institucional
+[file* your-commitment filetypes:pdf|PDF]/PDF</label>
+
+
+<label> Perfil de proyecto para aplicar localmente
+[file* your-project filetypes:pdf|PDF]/PDF</label>
+
+  
+<h2>Declaración</h2>
+
+<p> [acceptance your-acceptance default:on] Declaro que he leído la convocatoria con todas sus instrucciones y correspondientes anexos y que la información entregada en el presente formulario es totalmente veraz y corresponde a lo solicitado. </p>
+
+
+
+
+[submit "Enviar"]
